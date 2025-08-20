@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Crescentia Treasure Hunt — Launch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Inter + Orbitron for premium vibe -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Orbitron:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body class="theme-dark">
+    <div class="noise-overlay"></div>
+
+    <main class="landing">
+      <header class="brand">
+        <div id="crash-screen">
+          <p>:(</p>
+          <p>Your system has run into a problem and needs to restart.</p>
+          <p>Error Code: 0x0000C0RRUPT</p>
+          <p>Collecting some crash info... 42% complete</p>
+        </div>
+        <span class="badge">Crescentia</span>
+        <h1 class="title">SYSTEM CORRUPTED</h1>
+        <!-- <p class="subtitle">Scroll to initiate sequence</p> -->
+      </header>
+
+      <!-- Scattered "ERRORS" text -->
+      <section id="errors-cloud" aria-hidden="true"></section>
+
+      <!-- Scroll hint -->
+      <div class="scroll-indicator" role="img" aria-label="Scroll down">
+        <span>▼</span>
+      </div>
+
+      <!-- Start button (hidden until scroll) -->
+      <div class="start-wrap hidden" id="startWrap">
+        <a
+          href="countdown.html"
+          class="btn-start"
+          id="btnStart"
+          aria-label="Start the game"
+          >Start</a
+        >
+      </div>
+    </main>
+
+    <script src="assets/js/landing.js"></script>
+  </body>
+</html>

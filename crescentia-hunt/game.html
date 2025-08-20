@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Crescentia — Puzzle</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="theme-dark">
+  <div class="noise-overlay"></div>
+
+  <main class="game">
+    <header class="game-header">
+      <h1 class="game-title">Final Sequence</h1>
+      <p class="game-subtitle">Enter all 10 characters to unlock victory.</p>
+    </header>
+
+    <section class="inputs-grid" aria-label="Answer inputs">
+      <!-- 10 single-character inputs -->
+      <input maxlength="1" class="char" aria-label="Character 1" />
+      <input maxlength="1" class="char" aria-label="Character 2" />
+      <input maxlength="1" class="char" aria-label="Character 3" />
+      <input maxlength="1" class="char" aria-label="Character 4" />
+      <input maxlength="1" class="char" aria-label="Character 5" />
+      <input maxlength="1" class="char" aria-label="Character 6" />
+      <input maxlength="1" class="char" aria-label="Character 7" />
+      <input maxlength="1" class="char" aria-label="Character 8" />
+      <input maxlength="1" class="char" aria-label="Character 9" />
+      <input maxlength="1" class="char" aria-label="Character 10" />
+    </section>
+
+    <div class="controls">
+      <button id="btnSubmit" class="btn-primary">Submit</button>
+      <button id="btnClear" class="btn-ghost">Clear</button>
+    </div>
+
+    <section class="hints">
+      <h2>Puzzle Hints</h2>
+      <ol>
+        <!-- Replace these with your real event clues -->
+        <li>From the launch screen: count unique “ERRORS” clusters on the left.</li>
+        <li>Take the 2nd letter of Crescentia.</li>
+        <li>Room number of the registration desk (last digit).</li>
+        <li>Day of event (1=Mon, …, 7=Sun).</li>
+        <li>The year Crescentia was founded (last digit).</li>
+        <li>Number of organizers modulo 10.</li>
+        <li>First letter of the host department.</li>
+        <li>Total number of stalls (last digit).</li>
+        <li>First digit of event start time (24h).</li>
+        <li>Sum of QR posters near auditorium modulo 10.</li>
+      </ol>
+      <p class="hint-note">Tip: Letters are case-insensitive. Use numbers or symbols if your clue demands it.</p>
+    </section>
+
+    <section id="result" class="result" aria-live="polite"></section>
+  </main>
+
+  <script src="assets/js/game.js"></script>
+</body>
+</html>
