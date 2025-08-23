@@ -344,3 +344,32 @@ body.theme-dark {
   color: #111;
   opacity: 0.9;
 }
+/* ... keep all your previous CSS as it is ... */
+
+/* Fake Start button (glitchy) */
+.btn-start.fake {
+  background: #333;
+  color: #aaa;
+  border: 1px solid #555;
+  box-shadow: inset 0 0 6px rgba(255, 0, 0, 0.5);
+  animation: glitchText 1.2s infinite;
+}
+
+/* Real Stop button (works) */
+.btn-start.real {
+  background: linear-gradient(135deg, crimson, darkred);
+  color: #fff;
+  border: 1px solid #222;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.35);
+}
+
+/* Glitchy animation for fake Start */
+@keyframes glitchText {
+  0% { text-shadow: 2px 0 red, -2px 0 blue; }
+  20% { text-shadow: -2px -2px lime, 2px 2px red; }
+  40% { text-shadow: 2px 2px blue, -2px 0 red; }
+  60% { text-shadow: -2px 2px lime, 2px -2px blue; }
+  80% { text-shadow: 2px -2px red, -2px 2px lime; }
+  100% { text-shadow: none; }
+}
