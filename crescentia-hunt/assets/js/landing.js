@@ -42,6 +42,5 @@
   // Fake start button just alerts
   btnStart.addEventListener('click', (e) => {
     e.preventDefault();
-    alert("⚠️ Start button malfunction! Use STOP to exit game.");
   });
 })();
